@@ -1,6 +1,6 @@
 export default function WorkflowDiagram() {
   return (
-    <svg width="100%" viewBox="0 0 680 520" role="img">
+    <svg width="90%" viewBox="0 0 680 520" role="img">
       <title>Agent Sentinel core workflow diagram</title>
       <desc>
         Landscape flowchart showing the Agent Sentinel pipeline from source file
