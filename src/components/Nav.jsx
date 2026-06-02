@@ -15,7 +15,7 @@ export default function Nav() {
       </div>
 
       <a
-        href="https://github.com/goyalnitin148/agentsentinel"
+        href="https://github.com/nitin3150/agentsentinel"
         className="nav-cta"
         target="_blank"
         rel="noreferrer"

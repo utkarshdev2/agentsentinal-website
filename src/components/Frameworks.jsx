@@ -5,7 +5,7 @@ function FrameworkCard({ name, status }) {
     <div className="fw-card">
       <div className="fw-name">{name}</div>
       <span className={`fw-status ${status}`}>
-        {status === "supported" ? "✓ Supported" : "Demo"}
+        {status === "supported" ? "✓ Supported" : "Coming Soon"}
       </span>
     </div>
   );

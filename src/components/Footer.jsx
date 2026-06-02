@@ -4,7 +4,7 @@ export default function Footer() {
       <div className="footer-logo">[ Agent Sentinel ]</div>
 
       <div className="footer-links">
-        <a href="https://github.com/goyalnitin148/agentsentinel" target="_blank" rel="noreferrer">
+        <a href="https://github.com/nitin3150/agentsentinel" target="_blank" rel="noreferrer">
           GitHub
         </a>
         <a href="#how-it-works">Docs</a>

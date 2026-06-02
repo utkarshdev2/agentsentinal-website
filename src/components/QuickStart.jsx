@@ -20,7 +20,7 @@ export default function QuickStart() {
 
       <div style={{ marginTop: "1.5rem", display: "flex", gap: "1rem", flexWrap: "wrap" }}>
         <a
-          href="https://github.com/goyalnitin148/agentsentinel"
+          href="https://github.com/nitin3150/agentsentinel"
           className="btn-primary"
           target="_blank"
           rel="noreferrer"
@@ -28,7 +28,7 @@ export default function QuickStart() {
           View on GitHub
         </a>
         <a
-          href="https://github.com/goyalnitin148/agentsentinel/blob/main/README.md"
+          href="https://github.com/nitin3150/agentsentinel/blob/main/README.md"
           className="btn-secondary"
           target="_blank"
           rel="noreferrer"

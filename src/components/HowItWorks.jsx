@@ -1,4 +1,5 @@
 import { flowNodes, operations } from "../data/constants";
+import WorkflowDiagram from "./WorkflowDiagram";
 
 function PipelineFlow() {
   return (
@@ -18,18 +19,13 @@ function PipelineFlow() {
   );
 }
 
-function OperationCard({ num, fn, title, desc, tags }) {
+function OperationCard({ num, fn, title, desc}) {
   return (
     <div className="op-card">
       <div className="op-num">{num}</div>
       <div className="op-name">{fn}</div>
       <div className="op-title">{title}</div>
       <p className="op-desc">{desc}</p>
-      <div className="op-tags">
-        {tags.map((t) => (
-          <span key={t} className="tag">{t}</span>
-        ))}
-      </div>
     </div>
   );
 }
@@ -44,7 +40,7 @@ export default function HowItWorks() {
         inspected, improved, and adversarially verified.
       </p>
 
-      <PipelineFlow />
+      <WorkflowDiagram />
 
       <div className="ops-grid">
         {operations.map((op) => (

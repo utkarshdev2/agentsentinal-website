@@ -1,53 +1,97 @@
 export const risks = [
-  { icon: "💉", name: "injection_vulnerable", desc: "System prompt can be overridden by crafted user input" },
-  { icon: "🚧", name: "constraint_missing",   desc: "No explicit do/don't boundaries defined for the agent" },
-  { icon: "🌫️", name: "ambiguous_instructions", desc: "Vague phrasing that allows dangerous misinterpretation" },
-  { icon: "🌐", name: "scope_overflow",        desc: "Agent can act beyond its intended operational domain" },
-  { icon: "🔧", name: "tool_quality_low",      desc: "Tools lack descriptions, typed params, or error handling" },
-  { icon: "🎭", name: "persona_drift",         desc: "Persona not anchored — model can be role-played out of it" },
-  { icon: "🧠", name: "memory_risk",           desc: "Memory pattern may leak sensitive data across sessions" },
-  { icon: "🌀", name: "hallucination_prone",   desc: "No grounding or citation requirements in place" },
-  { icon: "📋", name: "policy_violation",      desc: "Prompt or tools conflict with your supplied policy doc" },
+  {
+    icon: "💉",
+    name: "injection_vulnerable",
+    desc: "System prompt can be overridden by crafted user input",
+  },
+  {
+    icon: "🚧",
+    name: "constraint_missing",
+    desc: "No explicit do/don't boundaries defined for the agent",
+  },
+  {
+    icon: "🌫️",
+    name: "ambiguous_instructions",
+    desc: "Vague phrasing that allows dangerous misinterpretation",
+  },
+  {
+    icon: "🌐",
+    name: "scope_overflow",
+    desc: "Agent can act beyond its intended operational domain",
+  },
+  {
+    icon: "🔧",
+    name: "tool_quality_low",
+    desc: "Tools lack descriptions, typed params, or error handling",
+  },
+  {
+    icon: "🎭",
+    name: "persona_drift",
+    desc: "Persona not anchored — model can be role-played out of it",
+  },
+  {
+    icon: "🧠",
+    name: "memory_risk",
+    desc: "Memory pattern may leak sensitive data across sessions",
+  },
+  {
+    icon: "🌀",
+    name: "hallucination_prone",
+    desc: "No grounding or citation requirements in place",
+  },
+  {
+    icon: "📋",
+    name: "policy_violation",
+    desc: "Prompt or tools conflict with your supplied policy doc",
+  },
 ];
 
 export const frameworks = [
-  { name: "LangGraph",   status: "supported" },
-  { name: "CrewAI",      status: "demo" },
-  { name: "Google ADK",  status: "demo" },
-  { name: "LangChain",   status: "demo" },
-  { name: "LlamaIndex",  status: "demo" },
+  { name: "LangGraph/LangChain", status: "supported" },
+  { name: "CrewAI", status: "coming-soon" },
+  { name: "Google ADK", status: "coming-soon" },
+  { name: "LlamaIndex", status: "coming-soon" },
 ];
 
 export const flowNodes = [
-  { icon: "🤖", title: "Your Agent",      sub: "Any framework\nraw or compiled" },
-  { icon: "🔍", title: "AgentIntake",     sub: "Framework detection\nprofile extraction" },
-  { icon: "🧪", title: "InspectorAgent",  sub: "6 parallel analyzers\nrisk scoring" },
-  { icon: "✍️", title: "PromptImprover",  sub: "DSPy rewrites\nevery flagged risk" },
-  { icon: "⚔️", title: "TestAgent",       sub: "Adversarial campaigns\nmultithreaded" },
-  { icon: "📄", title: "Audit Report",    sub: "audit_report.json\n+ .md" },
+  { icon: "🤖", title: "Your Agent", sub: "Any framework\nraw or compiled" },
+  {
+    icon: "🔍",
+    title: "AgentIntake",
+    sub: "Framework detection\nprofile extraction",
+  },
+  {
+    icon: "🧪",
+    title: "InspectorAgent",
+    sub: "6 parallel analyzers\nrisk scoring",
+  },
+  { icon: "✍️", title: "Optimizer", sub: "DSPy rewrites\nevery flagged risk" },
+  {
+    icon: "⚔️",
+    title: "TestAgent",
+    sub: "Adversarial campaigns\nmultithreaded",
+  },
+  { icon: "📄", title: "Audit Report", sub: "audit_report.json\n+ .md" },
 ];
 
 export const operations = [
   {
     num: "01",
-    fn: "sentinel.inspect(agent)",
-    title: "Risk Analysis",
+    title: "Inspect",
     desc: "Extracts system prompt, tools, memory, and framework structure. Six analyzers run in parallel — static checks, semantic analysis, and policy compliance.",
-    tags: ["prompt", "tools", "memory", "framework", "semantic", "policy"],
+    tags: [],
   },
   {
     num: "02",
-    fn: "sentinel.improve(profile)",
-    title: "Prompt Rewriting",
+    title: "Optimize",
     desc: "Takes the risk profile and rewrites system prompt + tool definitions. Sequential fixes for injection and persona drift run first; the rest run in parallel.",
-    tags: ["DSPy ChainOfThought", "parallel fixes", "policy guard", "change_log"],
+    tags: [],
   },
   {
     num: "03",
-    fn: "tester.test(agent, profile)",
-    title: "Adversarial Stress Test",
+    title: "Test",
     desc: "Generates adversarial prompts targeting every risk flag, fires them against the live agent multithreaded, and scores each response for policy compliance.",
-    tags: ["generate", "run", "evaluate", "audit_report.md"],
+    tags: [],
   },
 ];
 
@@ -59,7 +103,7 @@ export const stats = [
 ];
 
 export const installCommands = [
-  "git clone https://github.com/goyalnitin148/agentsentinel.git",
+  "git clone https://github.com/nitin3150/agentsentinel.git",
   "cd agentsentinel",
   "python -m venv .venv && source .venv/bin/activate",
   "pip install -r requirements.txt",
