@@ -41,7 +41,7 @@ export default function WorkflowDiagram() {
         />
         <text
           fontFamily="var(--font-head)"
-          fontSize="13"
+          fontSize="12"
           fontWeight="700"
           fill="#fff"
           x="76"
@@ -86,7 +86,7 @@ export default function WorkflowDiagram() {
         />
         <text
           fontFamily="var(--font-head)"
-          fontSize="13"
+          fontSize="12"
           fontWeight="700"
           fill="#fff"
           x="221"
@@ -131,7 +131,7 @@ export default function WorkflowDiagram() {
         />
         <text
           fontFamily="var(--font-head)"
-          fontSize="13"
+          fontSize="12"
           fontWeight="700"
           fill="#fff"
           x="383"
@@ -181,7 +181,7 @@ export default function WorkflowDiagram() {
         />
         <text
           fontFamily="var(--font-head)"
-          fontSize="13"
+          fontSize="12"
           fontWeight="700"
           fill="#fff"
           x="571"
@@ -234,7 +234,7 @@ export default function WorkflowDiagram() {
         />
         <text
           fontFamily="var(--font-head)"
-          fontSize="13"
+          fontSize="12"
           fontWeight="700"
           fill="#fff"
           x="562"
@@ -279,7 +279,7 @@ export default function WorkflowDiagram() {
         />
         <text
           fontFamily="var(--font-head)"
-          fontSize="13"
+          fontSize="12"
           fontWeight="700"
           fill="#fff"
           x="283"
@@ -320,7 +320,7 @@ export default function WorkflowDiagram() {
       />
       <text
         fontFamily="var(--font-head)"
-        fontSize="13"
+        fontSize="12"
         fontWeight="700"
         fill="#fff"
         x="283"
@@ -376,7 +376,7 @@ export default function WorkflowDiagram() {
         />
         <text
           fontFamily="var(--font-head)"
-          fontSize="13"
+          fontSize="12"
           fontWeight="700"
           fill="#fff"
           x="544"
@@ -433,7 +433,7 @@ export default function WorkflowDiagram() {
         />
         <text
           fontFamily="var(--font-head)"
-          fontSize="13"
+          fontSize="12"
           fontWeight="700"
           fill="#fff"
           x="283"
@@ -478,7 +478,7 @@ export default function WorkflowDiagram() {
         />
         <text
           fontFamily="var(--font-head)"
-          fontSize="13"
+          fontSize="12"
           fontWeight="700"
           fill="#fff"
           x="549"

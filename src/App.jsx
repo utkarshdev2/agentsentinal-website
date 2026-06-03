@@ -1,3 +1,4 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./styles/global.css";
 
 import Nav        from "./components/Nav";
@@ -10,8 +11,9 @@ import Frameworks from "./components/Frameworks";
 import QuickStart from "./components/QuickStart";
 import FuturePlans from "./components/FuturePlans";
 import Footer     from "./components/Footer";
+import DocsPage   from "./pages/DocsPage";
 
-export default function App() {
+function HomePage() {
   return (
     <>
       <div className="grid-bg" />
@@ -28,5 +30,16 @@ export default function App() {
         <Footer />
       </div>
     </>
+  );
+}
+
+export default function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/"     element={<HomePage />} />
+        <Route path="/docs" element={<DocsPage />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
