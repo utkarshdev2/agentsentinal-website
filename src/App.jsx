@@ -8,6 +8,7 @@ import CodeSection from "./components/CodeSection";
 import RiskGrid   from "./components/RiskGrid";
 import Frameworks from "./components/Frameworks";
 import QuickStart from "./components/QuickStart";
+import FuturePlans from "./components/FuturePlans";
 import Footer     from "./components/Footer";
 
 export default function App() {
@@ -23,6 +24,7 @@ export default function App() {
         <RiskGrid />
         <Frameworks />
         <QuickStart />
+        <FuturePlans />
         <Footer />
       </div>
     </>
