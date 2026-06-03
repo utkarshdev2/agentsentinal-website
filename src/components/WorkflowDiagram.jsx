@@ -441,7 +441,7 @@ export default function WorkflowDiagram() {
           textAnchor="middle"
           dominantBaseline="central"
         >
-          PromptImprover
+          Optimizer
         </text>
         <text
           fontFamily="var(--font-mono)"

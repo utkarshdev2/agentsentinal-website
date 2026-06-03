@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 export default function Nav() {
   return (
     <nav>
-      <Link className="logo" to="/">
+      <a href="#" className="logo">
         <span className="logo-bracket">[</span>
         Agent Sentinel
         <span className="logo-bracket">]</span>
-      </Link>
+      </a>
 
       <div className="nav-links">
         <a href="#how-it-works">How it works</a>

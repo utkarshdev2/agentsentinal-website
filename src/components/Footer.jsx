@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Footer() {
   return (
     <footer>
@@ -7,7 +9,7 @@ export default function Footer() {
         <a href="https://github.com/nitin3150/agentsentinel" target="_blank" rel="noreferrer">
           GitHub
         </a>
-        <a href="#how-it-works">Docs</a>
+        <Link to="/docs">Docs</Link>
         <a href="#risks">Risk Model</a>
         <a href="#install">Quick Start</a>
       </div>
