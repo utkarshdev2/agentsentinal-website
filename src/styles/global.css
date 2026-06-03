@@ -88,7 +88,7 @@ nav {
   gap: 0.5rem;
 }
 .logo-bracket {
-  color: var(--muted);
+  color: #b5b5b5;
   font-weight: 300;
 }
 .nav-links {
@@ -96,7 +96,7 @@ nav {
   gap: 2rem;
 }
 .nav-links a {
-  color: var(--muted);
+  color: #b5b5b5;
   text-decoration: none;
   font-size: 0.8rem;
   letter-spacing: 0.08em;
@@ -180,7 +180,7 @@ h1 span {
 .hero-desc {
   font-size: 0.95rem;
   line-height: 1.8;
-  color: var(--muted);
+  color: #b5b5b5;
   margin-bottom: 2.5rem;
   font-family: var(--font-mono);
   max-width: 480px;
@@ -263,7 +263,7 @@ h1 span {
   color: var(--text);
 }
 .t-comment {
-  color: var(--muted);
+  color: #b5b5b5;
 }
 .t-output {
   color: #22c55e;
@@ -310,7 +310,7 @@ h1 span {
 }
 .stat-label {
   font-size: 0.72rem;
-  color: var(--muted);
+  color: #b5b5b5;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   margin-top: 0.2rem;
@@ -352,7 +352,7 @@ h2 span {
   color: var(--amber);
 }
 .section-desc {
-  color: var(--muted);
+  color: "#b5b5b5";
   font-size: 0.9rem;
   line-height: 1.8;
   max-width: 540px;
@@ -395,7 +395,7 @@ h2 span {
 }
 .flow-node-sub {
   font-size: 0.7rem;
-  color: var(--muted);
+  color: #b5b5b5;
   line-height: 1.5;
 }
 
@@ -456,7 +456,7 @@ h2 span {
 .op-desc {
   font-size: 0.82rem;
   line-height: 1.8;
-  color: var(--muted);
+  color: #b5b5b5;
   margin-bottom: 1.5rem;
 }
 
@@ -479,7 +479,7 @@ h2 span {
   padding: 0.6rem 1.25rem;
   font-size: 0.75rem;
   cursor: pointer;
-  color: var(--muted);
+  color: #b5b5b5;
   border-bottom: 2px solid transparent;
   transition: all 0.2s;
   letter-spacing: 0.05em;
@@ -511,7 +511,7 @@ pre {
   color: #86efac;
 }
 .cm {
-  color: var(--muted);
+  color: #b5b5b5;
   font-style: italic;
 }
 .num {
@@ -546,7 +546,7 @@ pre {
 }
 .risk-desc {
   font-size: 0.8rem;
-  color: var(--muted);
+  color: #b5b5b5;
   line-height: 1.6;
 }
 
@@ -632,7 +632,7 @@ footer {
   gap: 1.5rem;
 }
 .footer-links a {
-  color: var(--muted);
+  color: #b5b5b5;
   text-decoration: none;
   font-size: 0.75rem;
   transition: color 0.2s;
@@ -642,7 +642,7 @@ footer {
 }
 .footer-badge {
   font-size: 0.72rem;
-  color: var(--muted);
+  color: #b5b5b5;
   border: 1px solid var(--border);
   padding: 0.25rem 0.75rem;
 }
@@ -757,7 +757,7 @@ footer {
   font-size: 0.65rem;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--muted);
+  color: #b5b5b5;
   padding: 0 1.5rem 1rem;
 }
 .docs-sidebar-link {
@@ -769,7 +769,7 @@ footer {
   padding: 0.5rem 1.5rem;
   font-family: var(--font-mono);
   font-size: 0.78rem;
-  color: var(--muted);
+  color: #b5b5b5;
   cursor: pointer;
   transition: color 0.15s, background 0.15s;
   letter-spacing: 0.02em;
@@ -821,7 +821,7 @@ footer {
 .docs-prose {
   font-size: 0.85rem;
   line-height: 1.9;
-  color: var(--muted);
+  color: #b5b5b5;
   margin-bottom: 1.5rem;
   max-width: 640px;
 }
@@ -855,7 +855,7 @@ footer {
   background: var(--bg3);
   padding: 0.4rem 1rem;
   font-size: 0.68rem;
-  color: var(--muted);
+  color: #b5b5b5;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   border-bottom: 1px solid var(--border);
@@ -883,7 +883,7 @@ footer {
   background: var(--bg3);
   padding: 0.6rem 1rem;
   text-align: left;
-  color: var(--muted);
+  color: #b5b5b5;
   font-weight: 400;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -908,7 +908,7 @@ footer {
   font-size: 0.65rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--muted);
+  color: #b5b5b5;
   margin-bottom: 0.75rem;
 }
 .docs-param {
@@ -947,7 +947,7 @@ footer {
 }
 .docs-param-desc {
   font-size: 0.78rem;
-  color: var(--muted);
+  color: #b5b5b5;
   line-height: 1.6;
 }
 

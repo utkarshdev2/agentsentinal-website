@@ -40,7 +40,7 @@ export default function Hero() {
         </h1>
         <p className="hero-desc fade-up delay-2">
           Agent Sentinel inspects, hardens, and stress-tests your AI agents before they go live.
-          Static analysis, DSPy-powered prompt rewriting, and adversarial campaigns: in one pipeline.
+          Static analysis, DSPy-powered prompt rewriting, and adversarial stress-testing: in one pipeline.
         </p>
         <div className="hero-actions fade-up delay-3">
           <a

@@ -364,12 +364,12 @@ print(result["iteration"])           # number of optimization cycles run`}</Code
                 All standards are checked concurrently.
               </p>
               <Table
-                headers={["Standard", "Rules", "What it checks"]}
+                headers={["Standard", "What it checks"]}
                 rows={[
-                  ["hipaa", "5 rules", "PHI handling, minimum necessary access, encryption, audit trails"],
-                  ["soc2",  "5 rules", "Data security, access control, audit logging, availability"],
-                  ["owasp", "5 rules", "LLM Top 10 2025 — prompt injection, insecure output, data leakage"],
-                  ["pii",   "5 rules", "Consent, retention policy, encryption, scope of collection"],
+                  ["hipaa", "PHI handling, minimum necessary access, encryption, audit trails"],
+                  ["soc2", "Data security, access control, audit logging, availability"],
+                  ["owasp", "LLM Top 10 2025 — prompt injection, insecure output, data leakage"],
+                  ["pii", "Consent, retention policy, encryption, scope of collection"],
                 ]}
               />
               <Code lang="python">{`# Check specific standards
@@ -393,13 +393,10 @@ for std, result in profile.compliance_results.results.items():
                 rows={[
                   ["LangGraph",  "Full support",  "Live object + source file detection"],
                   ["LangChain",  "Partial",        "Pass system_prompt and tool_definitions explicitly"],
-                  ["CrewAI",     "Demo available", "demo/crewai_agent.py"],
-                  ["Google ADK", "Demo available", "demo/google_adk_agent.py"],
-                  ["LlamaIndex", "Demo available", "demo/llamaindex_agent.py"],
                 ]}
               />
               <p className="docs-prose" style={{ marginTop: "1.5rem" }}>
-                For unsupported frameworks, pass <code>system_prompt</code>, <code>tool_definitions</code>,
+                For unsupported frameworks, pas s <code>system_prompt</code>, <code>tool_definitions</code>,
                 and optionally <code>source_code</code> directly to <code>inspect()</code>:
               </p>
               <Code lang="python">{`profile = sentinel.inspect(
