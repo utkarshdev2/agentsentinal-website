@@ -30,7 +30,7 @@ const statusColors = {
 
 export default function FuturePlans() {
   return (
-    <section id="future" style={{ paddingTop: 0 }}>
+    <section id="plans" style={{ paddingTop: 0 }}>
       <div className="section-label">Roadmap</div>
       <h2>What's coming<br /><span>next.</span></h2>
       <p className="section-desc">
