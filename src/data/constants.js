@@ -63,7 +63,7 @@ export const flowNodes = [
   {
     icon: "🧪",
     title: "InspectorAgent",
-    sub: "6 parallel analyzers\nrisk scoring",
+    sub: "7 parallel analyzers\nrisk scoring",
   },
   { icon: "✍️", title: "Optimizer", sub: "DSPy rewrites\nevery flagged risk" },
   {
@@ -83,22 +83,22 @@ export const operations = [
   },
   {
     num: "02",
-    title: "Optimize",
-    desc: "Takes the risk profile and rewrites system prompt + tool definitions. Sequential fixes for injection and persona drift run first; the rest run in parallel.",
+    title: "Test",
+    desc: "Generates adversarial prompts targeting every risk flag, fires them against the live agent multithreaded, and scores each response for policy compliance.",
     tags: [],
   },
   {
     num: "03",
-    title: "Test",
-    desc: "Generates adversarial prompts targeting every risk flag, fires them against the live agent multithreaded, and scores each response for policy compliance.",
+    title: "Optimize",
+    desc: "Takes the risk profile and rewrites system prompt + tool definitions. Sequential fixes for injection and persona drift run first; the rest run in parallel.",
     tags: [],
   },
 ];
 
 export const stats = [
-  { num: "6", label: "Parallel Analyzers" },
+  { num: "7", label: "Parallel Analyzers" },
   { num: "9", label: "Risk Categories" },
-  { num: "5", label: "Frameworks" },
+  { num: "2", label: "Frameworks" },
   { num: "3", label: "Pipeline Stages" },
 ];
 
@@ -124,13 +124,13 @@ profile = sentinel.<span class="fn">inspect</span>(
 <span class="fn">print</span>(profile.overall_risk)     <span class="cm"># low / medium / high</span>
 <span class="fn">print</span>(profile.risk_flags)        <span class="cm"># list of RiskFlag objects</span>`,
 
-  improve: `<span class="cm"># Rewrite the prompt to fix every flagged risk</span>
-result = sentinel.<span class="fn">improve</span>(
+  optimize: `<span class="cm"># Rewrite the prompt to fix every flagged risk</span>
+result = sentinel.<span class="fn">optimize</span>(
     profile,
     policies=<span class="str">"sample_policies.pdf"</span>
 )
 
-<span class="fn">print</span>(result.improved_prompt)   <span class="cm"># hardened system prompt</span>
+<span class="fn">print</span>(result.optimized_prompt)   <span class="cm"># hardened system prompt</span>
 <span class="fn">print</span>(result.change_log)         <span class="cm"># what changed and why</span>`,
 
   test: `<span class="cm"># Adversarial stress test</span>

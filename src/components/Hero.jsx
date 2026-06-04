@@ -6,11 +6,11 @@ function Terminal() {
         <div className="term-dot" style={{ background: "#F59E0B" }} />
         <div className="term-dot" style={{ background: "#22C55E" }} />
         <span style={{ marginLeft: "0.5rem", fontSize: "0.7rem", color: "var(--muted)" }}>
-          sentinel — inspection
+          agentsentinel — inspection
         </span>
       </div>
       <div className="term-body">
-        <span className="term-line"><span className="t-prompt">$</span> <span className="t-cmd">sentinel inspect ./my_agent.py</span></span>
+        <span className="term-line"><span className="t-prompt">$</span> <span className="t-cmd">agentsentinel inspect ./my_agent.py</span></span>
         <span className="term-line"><span className="t-comment">  Detecting framework... LangGraph ✓</span></span>
         <span className="term-line"><span className="t-comment">  Extracting profile... done</span></span>
         <span className="term-line"><span className="t-comment">  Running 6 analyzers in parallel...</span></span>
@@ -23,7 +23,7 @@ function Terminal() {
         <span className="term-line"><span className="t-risk-med">  ⚠ CONSTRAINT_MISSING</span></span>
         <span className="term-line"><span className="t-risk-med">  ⚠ HALLUCINATION_PRONE</span></span>
         <span className="term-line"> </span>
-        <span className="term-line"><span className="t-comment">  Run `sentinel improve` to fix all flags →</span></span>
+        <span className="term-line"><span className="t-comment">  Run `agentsentinel optimize` to fix all flags →</span></span>
       </div>
     </div>
   );
@@ -40,7 +40,7 @@ export default function Hero() {
         </h1>
         <p className="hero-desc fade-up delay-2">
           Agent Sentinel inspects, hardens, and stress-tests your AI agents before they go live.
-          Static analysis, DSPy-powered prompt rewriting, and adversarial stress-testing: in one pipeline.
+          Static analysis, agent optimization, and adversarial campaigns: in one pipeline.
         </p>
         <div className="hero-actions fade-up delay-3">
           <a
