@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { codeSamples } from "../data/constants";
 
-const TABS = ["inspect", "improve", "test"];
+const TABS = ["inspect", "optimize", "test"];
 
 export default function CodeSection() {
   const [activeTab, setActiveTab] = useState("inspect");
