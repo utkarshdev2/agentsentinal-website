@@ -12,7 +12,7 @@ import QuickStart from "./components/QuickStart";
 import FuturePlans from "./components/FuturePlans";
 import Footer     from "./components/Footer";
 import DocsPage   from "./pages/DocsPage";
-import Contact    from "./pages/Contact";
+import Contact    from "./components/Contact";
 
 function HomePage() {
   return (
@@ -28,6 +28,7 @@ function HomePage() {
         <Frameworks />
         <QuickStart />
         <FuturePlans />
+        <Contact />
         <Footer />
       </div>
     </>

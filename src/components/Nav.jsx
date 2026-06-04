@@ -15,6 +15,7 @@ export default function Nav() {
         <a href="#frameworks">Frameworks</a>
         <a href="#install">Quick Start</a>
         <a href="#plans">Future Plans</a>
+        <a href="#contact">Contact</a>
         <Link to="/docs" style={{ color: "var(--amber)" }}>Docs</Link>
       </div>
 
