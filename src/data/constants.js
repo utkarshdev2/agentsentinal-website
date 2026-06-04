@@ -142,3 +142,4 @@ report = tester.<span class="fn">test</span>(agent, profile, policies=<span clas
 <span class="fn">print</span>(report[<span class="str">"summary"</span>])
 <span class="cm"># { pass_rate_pct: 94, passed: 47, failed: 3, total: 50 }</span>`,
 };
+

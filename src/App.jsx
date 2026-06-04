@@ -12,6 +12,7 @@ import QuickStart from "./components/QuickStart";
 import FuturePlans from "./components/FuturePlans";
 import Footer     from "./components/Footer";
 import DocsPage   from "./pages/DocsPage";
+import Contact    from "./pages/Contact";
 
 function HomePage() {
   return (
@@ -39,6 +40,7 @@ export default function App() {
       <Routes>
         <Route path="/"     element={<HomePage />} />
         <Route path="/docs" element={<DocsPage />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </BrowserRouter>
   );

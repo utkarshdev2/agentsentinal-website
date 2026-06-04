@@ -63,6 +63,10 @@ body {
   z-index: 1;
 }
 
+contact {
+  flex: 1;
+}
+
 /* ─── NAV ─────────────────────────────────────────── */
 nav {
   display: flex;
@@ -982,4 +986,14 @@ footer {
   .docs-content {
     padding: 2rem 1.5rem 4rem;
   }
+}
+
+/* Contact Page */
+.contact-name {
+  font-family: var(--font-head);
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 1rem;
+  letter-spacing: -0.02em;
 }
