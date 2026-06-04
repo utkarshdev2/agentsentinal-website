@@ -103,11 +103,14 @@ export const stats = [
 ];
 
 export const installCommands = [
-  "git clone https://github.com/nitin3150/agentsentinel.git",
-  "cd agentsentinel",
-  "python -m venv .venv && source .venv/bin/activate",
-  "pip install -r requirements.txt",
-  "cp .env.example .env   # set GROQ_API_KEY + OPENROUTER_API_KEY",
+  // "git clone https://github.com/nitin3150/agentsentinel.git",
+  // "cd agentsentinel",
+  // "python -m venv .venv && source .venv/bin/activate",
+  // "pip install -r requirements.txt",
+  // "cp .env.example .env   # set GROQ_API_KEY + OPENROUTER_API_KEY",
+  "pip install agentsentinel-ai",
+  "or",
+  "uv add agentsentinel-ai",
 ];
 
 export const codeSamples = {
@@ -133,7 +136,7 @@ result = sentinel.<span class="fn">optimize</span>(
 <span class="fn">print</span>(result.optimized_prompt)   <span class="cm"># hardened system prompt</span>
 <span class="fn">print</span>(result.change_log)         <span class="cm"># what changed and why</span>`,
 
-  test: `<span class="cm"># Adversarial stress test</span>
+  stress_test: `<span class="cm"># Adversarial stress test</span>
 <span class="kw">from</span> agentsentinel.core.agents.tester.tester <span class="kw">import</span> TestAgent
 
 tester = <span class="fn">TestAgent</span>()

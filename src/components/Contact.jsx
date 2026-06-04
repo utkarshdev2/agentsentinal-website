@@ -5,9 +5,9 @@ const contactInfo = [
   {
     name: "Nitin Goyal",
     image: "https://avatars.githubusercontent.com/u/3150?v=4",
-    linkedin: "https://www.linkedin.com/in/nitin-goyal-3150/",
-    email: "nitin.goyal@example.com",
-    website: "https://www.nitingoyal.com",
+    linkedin: "https://www.linkedin.com/in/nitin-k-g/",
+    email: "goyal.niti@northeastern.edu",
+    website: "https://www.github.com/nitin3150",
   },
   {
     name: "Utkarsh Dev",

@@ -124,11 +124,9 @@ export default function DocsPage() {
             <Section id="quickstart" label="Quick Start">
               <h2>Get up and running<br /><span>in minutes.</span></h2>
               <p className="docs-prose">Clone the repo, install dependencies, set two environment variables, and run.</p>
-              <Code lang="bash">{`git clone https://github.com/nitin3150/agentsentinel.git
-cd agentsentinal
-python -m venv .venv && source .venv/bin/activate
-pip install -r requirements.txt
-cp .env.example .env`}</Code>
+              <Code lang="bash">{`pip install agentsentinel-ai
+or
+uv add agentsentinel-ai`}</Code>
               <Code lang="python">{`from agentsentinel.sentinel import AgentSentinel
 
 sentinel = AgentSentinel()
@@ -225,7 +223,7 @@ print(profile.policy_violations)    # list[PolicyViolation]`}</Code>
 
             {/* OPTIMIZE */}
             <Section id="optimize" label="API — optimize()">
-              <h2><span>optimize()</span><br />Prompt rewriting.</h2>
+              <h2><span>optimize()</span><br />Prompt Optimization.</h2>
               <p className="docs-prose">
                 Rewrites the system prompt and tool definitions to fix every flagged risk using
                 DSPy <code>ChainOfThought</code> signatures. Sequential fixes run first (injection → persona),
@@ -236,8 +234,8 @@ print(profile.policy_violations)    # list[PolicyViolation]`}</Code>
     policies="policy.pdf",        # optional — used to ground constraint fixes
 )
 
-print(result.improved_prompt)
-print(result.improved_tool_definitions)
+print(result.optimized_prompt)
+print(result.optimized_tool_definitions)
 print(result.change_log)          # list of ChangeLogEntry
 print(result.policy_violations)   # any remaining violations after rewrite
 print(result.diff)                # unified diff of original vs improved`}</Code>
@@ -395,7 +393,7 @@ for std, result in profile.compliance_results.results.items():
                   ["LangChain",  "Partial",        "Pass system_prompt and tool_definitions explicitly"],
                 ]}
               />
-              <p className="docs-prose" style={{ marginTop: "1.5rem" }}>
+              {/* <p className="docs-prose" style={{ marginTop: "1.5rem" }}>
                 For unsupported frameworks, pas s <code>system_prompt</code>, <code>tool_definitions</code>,
                 and optionally <code>source_code</code> directly to <code>inspect()</code>:
               </p>
@@ -404,7 +402,7 @@ for std, result in profile.compliance_results.results.items():
     system_prompt=your_prompt,
     tools=your_tool_defs,
     source_code=your_source,
-)`}</Code>
+)`}</Code> */}
             </Section>
 
             {/* RATE LIMITS */}
