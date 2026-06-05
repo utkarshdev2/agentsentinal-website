@@ -11,7 +11,7 @@ const contactInfo = [
   },
   {
     name: "Utkarsh Dev",
-    image: "https://avatars.githubusercontent.com/u/8349?v=4",
+    image: "src/assets/Forg.png",
     linkedin: "https://www.linkedin.com/in/utkarsh-dev-b7416616b/",
     email: "utkarshdev8349@gmail.com",
     website: "https://utkarshdev2.github.io/Personal_Homepage/",
