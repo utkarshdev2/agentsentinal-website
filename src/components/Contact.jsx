@@ -1,5 +1,6 @@
 import Nav from "./Nav";
 import Footer from "./Footer";
+import ForgImg from "../assets/Forg.png";
 
 const contactInfo = [
   {
@@ -11,7 +12,7 @@ const contactInfo = [
   },
   {
     name: "Utkarsh Dev",
-    image: "src/assets/Forg.png",
+    image: ForgImg,
     linkedin: "https://www.linkedin.com/in/utkarsh-dev-b7416616b/",
     email: "utkarshdev8349@gmail.com",
     website: "https://utkarshdev2.github.io/Personal_Homepage/",
